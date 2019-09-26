@@ -12,15 +12,8 @@
     "dev": "webpack-dev-server  --open --hot",
     "lint": "eslint src --fix"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andela/neon-ah-frontend.git"
-  },
-  "author": "Andela Simulations Programme",
+  "author": "Jesse Obinna Egbosionu",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/andela/neon-ah-frontend/issues"
-  },
   "homepage": "https://github.com/andela/neon-ah-frontend#readme",
   "dependencies": {
     "@babel/runtime": "^7.3.1",
