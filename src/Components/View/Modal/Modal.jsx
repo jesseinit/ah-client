@@ -25,23 +25,13 @@ const Modal = ({ triggerEl, type }) => {
             <Grid columns="2">
               <Grid.Row>
                 <Grid.Column>
-                  <Button
-                    fluid
-                    as="a"
-                    href="https://ah-client.herokuapp.com/api/v1/auth/google"
-                    color="google plus"
-                  >
+                  <Button fluid as="a" href="https://ahv-backend.herokuapp.com/api/v1/auth/google" color="google plus">
                     <Icon name="google" />
                     Google
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
-                  <Button
-                    fluid
-                    as="a"
-                    href="https://ah-client.herokuapp.com/api/v1/auth/facebook"
-                    color="facebook"
-                  >
+                  <Button fluid as="a" href="https://ahv-backend.herokuapp.com/api/v1/auth/facebook" color="facebook">
                     <Icon name="facebook" />
                     Facebook
                   </Button>
@@ -49,18 +39,13 @@ const Modal = ({ triggerEl, type }) => {
               </Grid.Row>
               <Grid.Row>
                 <Grid.Column>
-                  <Button fluid as="a" href="https://ah-client.herokuapp.com/api/v1/auth/twitter" color="twitter">
+                  <Button fluid as="a" href="https://ahv-backend.herokuapp.com/api/v1/auth/twitter" color="twitter">
                     <Icon name="twitter" />
                     Twitter
                   </Button>
                 </Grid.Column>
                 <Grid.Column>
-                  <Button
-                    fluid
-                    as="a"
-                    href="https://ah-client.herokuapp.com/api/v1/auth/linkedin"
-                    color="linkedin"
-                  >
+                  <Button fluid as="a" href="https://ahv-backend.herokuapp.com/api/v1/auth/linkedin" color="linkedin">
                     <Icon name="linkedin" />
                     LinkedIn
                   </Button>

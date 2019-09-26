@@ -35,7 +35,7 @@ describe('Forgot Password Actions', () => {
     const { forgotPasswordData } = mockData;
     const mock = new MockAdapter(Axios);
     mock
-      .onPost('https://ah-client.herokuapp.com/api/v1/auth/resend-verification-link', {
+      .onPost('https://ahv-backend.herokuapp.com/api/v1/auth/resend-verification-link', {
         email: forgotPasswordData.email
       })
       .reply(500);
@@ -57,7 +57,7 @@ describe('Forgot Password Actions', () => {
     const { forgotPasswordData } = mockData;
     const mock = new MockAdapter(Axios);
     mock
-      .onPost('https://ah-client.herokuapp.com/api/v1/auth/resend-verification-link', {
+      .onPost('https://ahv-backend.herokuapp.com/api/v1/auth/resend-verification-link', {
         email: forgotPasswordData.email
       })
       .reply(200);
@@ -79,7 +79,7 @@ describe('Forgot Password Actions', () => {
     const { token } = mockData;
     const mock = new MockAdapter(Axios);
     const history = () => {};
-    mock.onPost(`https://ah-client.herokuapp.com/api/v1/auth/verify/${token}`).reply(500, {
+    mock.onPost(`https://ahv-backend.herokuapp.com/api/v1/auth/verify/${token}`).reply(500, {
       data: {
         status: 'failure'
       }

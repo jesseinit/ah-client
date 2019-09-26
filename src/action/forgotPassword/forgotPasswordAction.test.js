@@ -40,7 +40,7 @@ describe('Forgot Password Actions', () => {
     const { authResponse, forgotPasswordData } = mockData;
     const mock = new MockAdapter(Axios);
     mock
-      .onPost('https://ah-client.herokuapp.com/api/v1/password/forgot', {
+      .onPost('https://ahv-backend.herokuapp.com/api/v1/password/forgot', {
         email: forgotPasswordData.email
       })
       .reply(authResponse);
@@ -66,7 +66,7 @@ describe('Forgot Password Actions', () => {
     const mock = new MockAdapter(Axios);
 
     mock
-      .onPost(`https://ah-client.herokuapp.com/api/v1/password/reset/${token}`, {
+      .onPost(`https://ahv-backend.herokuapp.com/api/v1/password/reset/${token}`, {
         newPassword,
         confirmPassword
       })

@@ -34,7 +34,7 @@ describe('Forgot Password Actions', () => {
   test('Dispatches the correct action and payload when a success response is return', () => {
     const mock = new MockAdapter(Axios);
     mock
-      .onGet('https://ah-client.herokuapp.com/api/v1/users/jesseinit/following', {})
+      .onGet('https://ahv-backend.herokuapp.com/api/v1/users/jesseinit/following', {})
       .reply(200, { data: { message: 'jesseinit currently has no following' } });
 
     const expectedActions = [{ type: 'GET_FOLLOWING_SUCCESS', payload: [] }];
@@ -54,7 +54,7 @@ describe('Forgot Password Actions', () => {
     const { forgotPasswordData } = mockData;
     const mock = new MockAdapter(Axios);
     mock
-      .onGet('https://ah-client.herokuapp.com/api/v1/users/jesseinit/following', {})
+      .onGet('https://ahv-backend.herokuapp.com/api/v1/users/jesseinit/following', {})
       .reply(200, { data: { message: 'success', payload: { following: [] } } });
 
     const expectedActions = [{ type: 'GET_FOLLOWING_SUCCESS', payload: [] }];
@@ -74,7 +74,7 @@ describe('Forgot Password Actions', () => {
     const { forgotPasswordData } = mockData;
     const mock = new MockAdapter(Axios);
     mock
-      .onGet('https://ah-client.herokuapp.com/api/v1/users/jesseinit/following', {})
+      .onGet('https://ahv-backend.herokuapp.com/api/v1/users/jesseinit/following', {})
       .reply(400, { data: { message: 'success', payload: { following: [] } } });
 
     const expectedActions = [{ type: 'GET_FOLLOWING_FAILURE', payload: [] }];
@@ -94,7 +94,7 @@ describe('Forgot Password Actions', () => {
     const { forgotPasswordData } = mockData;
     const mock = new MockAdapter(Axios);
     mock
-      .onPost('https://ah-client.herokuapp.com/api/v1/users/jesseinit/follow', {})
+      .onPost('https://ahv-backend.herokuapp.com/api/v1/users/jesseinit/follow', {})
       .reply(200, { decode: { userName: 'jesseinit' } });
 
     const expectedActions = [{ type: 'GET_FOLLOWING_SUCCESS', payload: [] }];
@@ -113,7 +113,7 @@ describe('Forgot Password Actions', () => {
   test('Dispatches the correct action and payload when a success response is return', () => {
     const mock = new MockAdapter(Axios);
     mock
-      .onGet('https://ah-client.herokuapp.com/api/v1/user/bookmarks', {})
+      .onGet('https://ahv-backend.herokuapp.com/api/v1/user/bookmarks', {})
       .reply(200, { data: { message: 'You have not bookmarked any article yet' } });
 
     const expectedActions = [{ type: 'GET_BOOKMARK_SUCCESS', payload: [] }];
@@ -132,7 +132,7 @@ describe('Forgot Password Actions', () => {
   test('Dispatches the correct action and payload when a success response is return', () => {
     const mock = new MockAdapter(Axios);
     mock
-      .onGet('https://ah-client.herokuapp.com/api/v1/user/bookmarks', {})
+      .onGet('https://ahv-backend.herokuapp.com/api/v1/user/bookmarks', {})
       .reply(200, { data: { message: 'success', payload: { bookmarks: [] } } });
 
     const expectedActions = [{ type: 'GET_BOOKMARK_SUCCESS', payload: [] }];
@@ -150,7 +150,7 @@ describe('Forgot Password Actions', () => {
   test('Dispatches the correct action and payload when a success response is return', () => {
     const mock = new MockAdapter(Axios);
     mock
-      .onGet('https://ah-client.herokuapp.com/api/v1/user/bookmarks', {})
+      .onGet('https://ahv-backend.herokuapp.com/api/v1/user/bookmarks', {})
       .reply(400, { data: { message: 'success', payload: [] } });
 
     const expectedActions = [{ type: 'GET_BOOKMARK_FAILURE', payload: [] }];
@@ -167,7 +167,7 @@ describe('Forgot Password Actions', () => {
   });
   test('Dispatches the correct action and payload when a success response is return', () => {
     const mock = new MockAdapter(Axios);
-    mock.onPost('https://ah-client.herokuapp.com/api/v1/articles/bookmark/bookmark', {}).reply(200);
+    mock.onPost('https://ahv-backend.herokuapp.com/api/v1/articles/bookmark/bookmark', {}).reply(200);
 
     const expectedActions = [];
     const store = mockStore({
@@ -183,7 +183,7 @@ describe('Forgot Password Actions', () => {
   });
   test('Dispatches the correct action and payload when a success response is return', () => {
     const mock = new MockAdapter(Axios);
-    mock.onGet('https://ah-client.herokuapp.com/api/v1/search?author=s', {}).reply(200, {
+    mock.onGet('https://ahv-backend.herokuapp.com/api/v1/search?author=s', {}).reply(200, {
       data: { statusCode: 200, payload: { articles: [] } }
     });
 
