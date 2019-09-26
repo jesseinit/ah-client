@@ -14,7 +14,7 @@ describe('Homepage Actions', () => {
     const mock = new MockAdapter(Axios);
     const expectedActions = [{ type: 'GET_TAG_FAILURE', payload: [] }];
 
-    mock.onGet(`https://neon-ah-staging.herokuapp.com/api/v1/tags`).reply(200, {
+    mock.onGet(`https://ah-client.herokuapp.com/api/v1/tags`).reply(200, {
       data: {
         status: 'success'
       }

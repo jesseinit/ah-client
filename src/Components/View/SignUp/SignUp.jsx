@@ -119,7 +119,7 @@ export class SignUp extends React.Component {
                   <Button
                     fluid
                     as="a"
-                    href="https://neon-ah-staging.herokuapp.com/api/v1/auth/google"
+                    href="https://ah-client.herokuapp.com/api/v1/auth/google"
                     color="google plus"
                   >
                     <Icon name="google" />
@@ -130,7 +130,7 @@ export class SignUp extends React.Component {
                   <Button
                     fluid
                     as="a"
-                    href="https://neon-ah-staging.herokuapp.com/api/v1/auth/facebook"
+                    href="https://ah-client.herokuapp.com/api/v1/auth/facebook"
                     color="facebook"
                   >
                     <Icon name="facebook" />
@@ -140,7 +140,7 @@ export class SignUp extends React.Component {
               </Grid.Row>
               <Grid.Row>
                 <Grid.Column>
-                  <Button fluid as="a" href="https://neon-ah-staging.herokuapp.com/api/v1/auth/twitter" color="twitter">
+                  <Button fluid as="a" href="https://ah-client.herokuapp.com/api/v1/auth/twitter" color="twitter">
                     <Icon name="twitter" />
                     Twitter
                   </Button>
@@ -149,7 +149,7 @@ export class SignUp extends React.Component {
                   <Button
                     fluid
                     as="a"
-                    href="https://neon-ah-staging.herokuapp.com/api/v1/auth/linkedin"
+                    href="https://ah-client.herokuapp.com/api/v1/auth/linkedin"
                     color="linkedin"
                   >
                     <Icon name="linkedin" />

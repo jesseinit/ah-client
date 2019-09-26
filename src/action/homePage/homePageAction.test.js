@@ -14,7 +14,7 @@ describe('Homepage Actions', () => {
     const mock = new MockAdapter(Axios);
     const expectedActions = [{ type: 'GET_HOMEPAGE_ARTICLE_SUCCESS', payload: [] }];
 
-    mock.onGet(`https://neon-ah-staging.herokuapp.com/api/v1/articles`).reply(200, {
+    mock.onGet(`https://ah-client.herokuapp.com/api/v1/articles`).reply(200, {
       data: {
         status: 'success'
       }
