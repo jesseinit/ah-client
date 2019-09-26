@@ -14,7 +14,7 @@ describe('READ STATS Actions', () => {
     const mock = new MockAdapter(Axios);
     const expectedActions = [{ type: 'GET_READ_STATS_SUCCESS', payload: [] }];
 
-    mock.onGet(`https://neon-ah-staging.herokuapp.com/api/v1/stats`).reply(200, {
+    mock.onGet(`https://ahv-backend.herokuapp.com/api/v1/stats`).reply(200, {
       data: {
         status: 'success'
       }

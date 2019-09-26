@@ -10,7 +10,7 @@ const mockStore = configureMockStore(middlewares);
 
 describe('Notification async actions', () => {
   it('dispatches FETCH_NOTIFICATIONS_ERROR when fetching of notification fails', done => {
-    mock.onGet('/https://neon-ah-staging.herokuapp.com/api/v1/notifications?unread').networkError();
+    mock.onGet('/https://ahv-backend.herokuapp.com/api/v1/notifications?unread').networkError();
 
     const expectedActions = [
       {

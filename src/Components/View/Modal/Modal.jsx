@@ -28,7 +28,7 @@ const Modal = ({ triggerEl, type }) => {
                   <Button
                     fluid
                     as="a"
-                    href="https://neon-ah-staging.herokuapp.com/api/v1/auth/google"
+                    href="https://ahv-backend.herokuapp.com/api/v1/auth/google"
                     color="google plus"
                   >
                     <Icon name="google" />
@@ -39,7 +39,7 @@ const Modal = ({ triggerEl, type }) => {
                   <Button
                     fluid
                     as="a"
-                    href="https://neon-ah-staging.herokuapp.com/api/v1/auth/facebook"
+                    href="https://ahv-backend.herokuapp.com/api/v1/auth/facebook"
                     color="facebook"
                   >
                     <Icon name="facebook" />
@@ -49,7 +49,7 @@ const Modal = ({ triggerEl, type }) => {
               </Grid.Row>
               <Grid.Row>
                 <Grid.Column>
-                  <Button fluid as="a" href="https://neon-ah-staging.herokuapp.com/api/v1/auth/twitter" color="twitter">
+                  <Button fluid as="a" href="https://ahv-backend.herokuapp.com/api/v1/auth/twitter" color="twitter">
                     <Icon name="twitter" />
                     Twitter
                   </Button>
@@ -58,7 +58,7 @@ const Modal = ({ triggerEl, type }) => {
                   <Button
                     fluid
                     as="a"
-                    href="https://neon-ah-staging.herokuapp.com/api/v1/auth/linkedin"
+                    href="https://ahv-backend.herokuapp.com/api/v1/auth/linkedin"
                     color="linkedin"
                   >
                     <Icon name="linkedin" />
